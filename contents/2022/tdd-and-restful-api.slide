@@ -19,3 +19,26 @@ TL;DR: Write test before actually coding the actual code.
 2. Write no more of a unit test than sufficient to fail (compilation failures are failures).
 3. Write no more production code than necessary to pass the one failing unit test. <br/><br/>
 `by Robert C. Martin aka Uncle Bob`
+
+## About The Project
+
+I'm going to demonstrate building a banking api and using Clean Architecture software pattern
+
+**Use Case**<br/>
+1. Create new bank account
+2. Deposit into it account
+3. Withdraw from it bank account
+4. and check their balance
+
+## Clean Architecture
+
+![Clean Architecture](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
+
+## Introduction To Clean Architecture
+
+- Proposed by Robert C. Martin in 2012
+- Very low coupling independent of technical implementation details
+- Nothing in an inner circle can know anything at all about something in an outer circle
+
+## DEMO TIME!
+
