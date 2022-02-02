@@ -1,4 +1,5 @@
 # Three Laws of Test-Driven Development
+04 Feb 2022
 Summary: Three laws of TDD
 Tags: test-driven development, tdd
 
@@ -14,11 +15,12 @@ Test-Driven Development (or TDD) is a software development process relying on so
 
 <strong>TL;DR write your tests before writing the code they are meant to test.</strong>
 
-## Motto of TDD
+## Process of TDD
 
-<p align="center">
-    <img src="https://miro.medium.com/max/950/1*Mjb3IFooRmFumA2IgNEWbw.png" alt="tdd-red-green-blue" width="400"/>
-</p>
+<div align="center">
+  <img src="https://3903010379-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-L9Tqx5WSaiE4u24Pk05-2910905616%2Fuploads%2Fgit-blob-cad524fa8cb34476d131615dfd4861f9aa63a7c4%2Fred-green-blue-gophers-smaller.png?alt=media" alt="tdd-red-green-blue" width="400"/>
+  <figcaption>Source: quii.gitbook.io/learn-go-with-tests</figcaption>
+</div>
 
 1. <span style="color: red; font-weight: bold">RED</span>: Create a unit test and fail it.
 2. <span style="color: green; font-weight: bold">GREEN</span>: Make the test case pass.
@@ -44,3 +46,4 @@ Robert C. Martin (“Uncle Bob”) provides a concise set of laws for practicing
 - [Uncle Bob: Three Laws of TDD Demo](https://www.youtube.com/watch?v=qkblc5WRn-U)
 - [Pros and Cons of TDD](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-test-driven-development-tdd/)
 - [O'REILLY: Three Rules of TDD](https://www.oreilly.com/library/view/modern-c-programming/9781941222423/f_0055.html)
+- [Learn Go With Test](https://quii.gitbook.io/learn-go-with-tests/)
