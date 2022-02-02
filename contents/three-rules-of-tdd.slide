@@ -1,21 +1,46 @@
-# Three Rules of TDD
+# Three Rules of Test-Driven Development
 Summary: Three Rules of TDD
 Tags: test-driven development, tdd
 
 Muhammad Ilham
-Backend Engineer, Amartha Mikro Fintek
+Backend Engineer at PT. Amartha Mikro Fintek
 muhd.iiilham@gmail.com
 https://muhammadilham.xyz
 @w8rloO
 
 ## What Is TDD?
 
-Test-Driven Development is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases. - Wikipedia
+Test-Driven Development (or TDD) is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases. - [Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development)
 
-TL;DR write your tests before writing the code they are meant to test.
+<strong>TL;DR write your tests before writing the code they are meant to test.</strong>
 
-**Three Rules of TDD** <br/>
+## Motto of TDD
+
+<p align="center">
+    <img src="https://miro.medium.com/max/950/1*Mjb3IFooRmFumA2IgNEWbw.png" alt="tdd-red-green-blue" width="400"/>
+</p>
+
+1. <span style="color: red; font-weight: bold">RED</span>: Create a unit test and fail it.
+2. <span style="color: green; font-weight: bold">GREEN</span>: Make the test case pass.
+3. <span style="color: blue; font-weight: bold">BLUE</span>: Change the code to remove duplicate/redundancy.
+
+## Benefits of using TDD
+
+1. Easier To Refactor.
+2. High Test Coverage.
+3. Make Collaboration Easier.
+
+And there should be more benefits of using TDD.
+
+## The Three Rules of TDD
+
+Robert C. Martin (“Uncle Bob”) provides a concise set of rules for practicing TDD. Understanding these 3 rules of TDD makes it easier to implement it
+
 1. Write production code only to pass a failing unit test.
 2. Write no more of a unit test than sufficient to fail (compilation failures are failures).
-3. Write no more production code than necessary to pass the one failing unit test. <br/><br/>
-`by Robert C. Martin aka Uncle Bob`
+3. Write no more production code than necessary to pass the one failing unit test.
+
+## Sources:
+- [Uncle Bob: Three Rules of TDD Demo](https://www.youtube.com/watch?v=qkblc5WRn-U&t=1854s)
+- [Pros and Cons of TDD](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-test-driven-development-tdd/)
+- [O'REILLY: Three Rules of TDD](https://www.oreilly.com/library/view/modern-c-programming/9781941222423/f_0055.html)
