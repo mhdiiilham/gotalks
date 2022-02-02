@@ -1,3 +1,17 @@
 Go based presentations
 ---
-* [Testable RESTful API](https://go-talks.appspot.com/github.com/mhdiiilham/gotalks/2022/tdd-and-restful-api.slide)
+* [Three Laws of TDD](https://talks.muhammadilham.xyz/contents/three-laws-of-tdd.slide)
+
+# How To Run
+
+## Install the dependencies
+```
+go get golang.org/x/net
+go get golang.org/x/tools
+go install golang.org/x/tools/cmd/present
+```
+
+## Run
+```
+present
+```
