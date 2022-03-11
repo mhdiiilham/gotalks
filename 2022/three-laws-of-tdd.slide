@@ -14,17 +14,6 @@ Test-Driven Development (or TDD) is a software development process relying on so
 
 <strong>TL;DR write your test before writing the code they are meant to test.</strong>
 
-## TDD Circle
-
-<div align="center">
-  <img src="https://miro.medium.com/max/475/1*Mjb3IFooRmFumA2IgNEWbw.png" alt="tdd-red-green-blue" width="400"/>
-  <figcaption>Source: <a href="https://medium.com/koding-kala-weekend/tdd-the-series-part-1-apa-itu-test-driven-development-tdd-ff92c95c945f">Koding Kala Weekend</a></figcaption>
-</div>
-
-1. <span style="color: red; font-weight: bold">RED</span>: Create a unit test and fail it.
-2. <span style="color: green; font-weight: bold">GREEN</span>: Make the test case pass.
-3. <span style="color: blue; font-weight: bold">BLUE</span>: Change the code to remove duplicate/redundancy.
-
 ## Benefits of using TDD
 
 1. Easier To Refactor.
