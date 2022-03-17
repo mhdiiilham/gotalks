@@ -10,15 +10,12 @@ https://muhammadilham.xyz
 
 ## What Is VPN?
 
-VPN stand for "Virtual Private Network" and describes the opportunity to establish a protected network connection when using public networks.
+A virtual private network extends a private network across a public network and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network
 
-<strong>How Does It Work?</strong><br/>
-A VPN hides your real IP Address by letting the network redirect it through a specially configured remote server run by a VPN host.
-
-## Setup Your Own VPN Server In Under 10 minutes
-<strong>Requirements</strong>:<br/>
+## Requirements To Setup Own VPN Server
 - A PC with internet access
-- Ubuntu Server (I'm using 20.04 Version)
+- Remote Server with allowed traffic on port 1194 (OpenVPN Default Port)
+- Small shell scripting sxperience (optional)
 
 ## 1. Create New Ubuntu VM
 Follow this step if you are using Google Cloud Platform
@@ -38,6 +35,13 @@ Follow this step if you are using Google Cloud Platform
 ```bash
     wget https://git.io/vpn -O openvpn-ubuntu-install.sh
 ```
-4. Allow Open-VPN Port
-5. Copy the `xxx.ovpn` file to you device
+4. Make OpenVPN Installation Script Executeable
+```bash
+    sudo chmod +x ./openvpn-ubuntu-install.sh
+```
+5. Run The Installation Script And Just Follow The Steps
+```bash
+    ./openvpn-ubuntu-install.sh
+```
+6. Allow Open-VPN Port
 
