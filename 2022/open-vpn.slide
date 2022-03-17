@@ -1,0 +1,47 @@
+# Easily Create Your Own VPN Server
+18 March 2022
+Summary: Easily create your own vpn server using open-vpn
+Tags: vpn, server, ovpn
+
+Muhammad Ilham
+hi@muhammadilham.xyz
+https://muhammadilham.xyz
+@w8rloO
+
+## What Is VPN?
+
+A virtual private network extends a private network across a public network and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network
+
+## Requirements To Setup Own VPN Server
+- A PC with internet access
+- Remote Server with allowed traffic on port 1194 (OpenVPN Default Port)
+- Small shell scripting sxperience (optional)
+
+## 1. Create New Ubuntu VM
+Follow this step if you are using Google Cloud Platform
+
+1. Login To Your GCP Console
+2. On the navigation menu, choose "Compute Engine"
+3. On the "Compute Engine" page, click "Create Instance"
+
+## 2. Setup Open VPN On Your VM Instance
+1. SSH Into Your VM Instance
+2. Update the system
+```bash
+    sudo apt update
+    sudo apt upgrade
+```
+3. Download And Run Open-VPN Installation Script: [Installation Script Repository](https://github.com/Nyr/openvpn-install/)
+```bash
+    wget https://git.io/vpn -O openvpn-ubuntu-install.sh
+```
+4. Make OpenVPN Installation Script Executeable
+```bash
+    sudo chmod +x ./openvpn-ubuntu-install.sh
+```
+5. Run The Installation Script And Just Follow The Steps
+```bash
+    ./openvpn-ubuntu-install.sh
+```
+6. Allow Open-VPN Port
+
