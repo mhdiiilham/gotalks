@@ -14,34 +14,33 @@ A virtual private network extends a private network across a public network and 
 
 ## Requirements To Setup Own VPN Server
 - A PC with internet access
-- Remote Server with allowed traffic on port 1194 (OpenVPN Default Port)
-- Small shell scripting sxperience (optional)
+- Small shell scripting experience (optional)
 
-## 1. Create New Ubuntu VM
+## Create VM
 Follow this step if you are using Google Cloud Platform
 
 1. Login To Your GCP Console
 2. On the navigation menu, choose "Compute Engine"
 3. On the "Compute Engine" page, click "Create Instance"
 
-## 2. Setup Open VPN On Your VM Instance
-1. SSH Into Your VM Instance
-2. Update the system
+## Setup OpenVPN On Your VM Instance
+1. SSH Into Your VM Instance  And UOdate The System
 ```bash
     sudo apt update
     sudo apt upgrade
 ```
-3. Download And Run Open-VPN Installation Script: [Installation Script Repository](https://github.com/Nyr/openvpn-install/)
+2. Download OpenVPN Installation Script: [Installation Script Repository](https://github.com/Nyr/openvpn-install/)
 ```bash
     wget https://git.io/vpn -O openvpn-ubuntu-install.sh
 ```
-4. Make OpenVPN Installation Script Executeable
+3. Make OpenVPN Installation Script Executeable
 ```bash
     sudo chmod +x ./openvpn-ubuntu-install.sh
 ```
 5. Run The Installation Script And Just Follow The Steps
 ```bash
-    ./openvpn-ubuntu-install.sh
+    sudo ./openvpn-ubuntu-install.sh
 ```
-6. Allow Open-VPN Port
+6. Allow OpenVPN Port
+7. Copy the `.ovpn` File To Your Device
 
