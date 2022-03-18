@@ -1,0 +1,19 @@
+# Mono-Repository?
+18 March 2022
+Summary: What is monorepo and is it good?
+Tags: vcs, version-controll system, repository
+
+Muhammad Ilham
+hi@muhammadilham.xyz
+https://muhammadilham.xyz
+@w8rloO
+
+## What Is Monorepo
+
+A **monorepo** is a version-controlled code repository that holds many projects.
+
+Sometimes also called <i>monolithic repositories</i>, but they should not be confused with monolithic architecture
+
+## Monorepos vs. multirepos
+
+The opposite of the monorepo is multirepo,
