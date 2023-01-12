@@ -1,7 +1,5 @@
 Go based presentations
 ---
-* [Three Laws of TDD](https://talks.muhammadilham.xyz/contents/three-laws-of-tdd.slide)
-
 # How To Run
 
 ## Install the dependencies
