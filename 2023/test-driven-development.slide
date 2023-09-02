@@ -1,0 +1,98 @@
+# Introduction To Test Driven Development
+10 Sep 2023
+Summary: Introduction to test driven development and the three laws of TDD.
+Tags: test-driven development, tdd, testing, unit testing
+
+Muhammad Ilham
+hi@muhammadilham.xyz
+https://muhammadilham.xyz
+@w8rloO
+
+## What is Test?
+
+Test (or automated test) is a way to write code that describe the requirements and validate the main code.
+
+- Main Code
+```
+func Sum(a, b int) int {
+    return a+b
+}
+```
+
+- Test Code
+```
+func TestSum(t *testing.T) {
+    assert.Equal(t, 5, Sum(2, 3), "expected sum function to return 5")
+}
+```
+
+## Testing Pyramid
+
+<p align="center">
+  <img src="https://leaddev.com/sites/default/files/inline-images/unnamed.png" height="500" width="600"/></br>
+  <a href="https://leaddev.com/agile-other-ways-working/demystifying-software-engineering-test-pyramid" target="_blank">LeadDev</a>
+</p>
+
+## Unit Testing
+
+Unit testing is a type of software testing that focuses on individual units or components of a software system.
+
+Purpose of unit testing: validate that each unit of the software works as intended and meets the requirements
+
+Objective of Unit Testing:
+- Isolate a unit of code
+- Verify correctness of a code (unit or function)
+
+There is two way of doing test, __Test-Driven__ and Behavior-Driven.
+
+## Test-Driven Development?
+
+<p align="center">
+  <img src="https://3903010379-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-L9Tqx5WSaiE4u24Pk05-2910905616%2Fuploads%2Fgit-blob-cad524fa8cb34476d131615dfd4861f9aa63a7c4%2Fred-green-blue-gophers-smaller.png?alt=media" alt="tdd cycle image" height="200" width="450"/></br>
+  <a href="https://quii.gitbook.io/learn-go-with-tests/" target="_blank">Learn Go With Tests</a>
+</p>
+
+<strong>TL;DR write your test before writing any code that are meant to be tested.</strong>
+
+## Advantages of using TDD
+
+1. Quick changes
+2. Effortless code maintenance
+3. Ease of collaboration
+4. Test code can also be use as documentations
+
+And there should be more benefits when we are using TDD
+
+## The Three Laws of TDD
+
+Robert C. Martin (“Uncle Bob”) provides a concise set of laws for practicing TDD. Understanding these 3 laws of TDD makes it easier to implement it
+
+1. You are not allowed to write any production code unless it is to make a failing unit test pass.
+2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
+3. You are not allowed to write any more production code than is sufficient to pass the one failing unit test.
+
+## 1. You are not allowed to write any production code unless it is to make a failing unit test pass.
+
+You must first write a unit test and that unit test must fail!
+
+_WHAT THE HECK ARE WE SUPPOSED TO TEST?_
+
+## 2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
+
+__As soon as the unit test is fails__ you __MUST__ stop writing it!
+
+## 3. Write no more production code than necessary to pass the one failing unit test.
+
+Congrats! Now you fell into a cycle of hell, lol.
+
+__You have to write a unit test first__ (because the first law said you have to)
+and then you have __write production code__, but you can't write much of that because that will make the unit test pass,
+then you have to switch back to the test and add a little bit more and it won't work again, and go back to write production code, and then unit test code, then production code again, and so on ...
+
+It is __<i>dumb</i>__, YES, lot of SOFTWARE ENGINEERS don't agree too.
+
+## Sources:
+- [Uncle Bob: Three Laws of TDD Demo](https://www.youtube.com/watch?v=qkblc5WRn-U)
+- [Pros and Cons of TDD](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-test-driven-development-tdd/)
+- [O'REILLY: Three Rules of TDD](https://www.oreilly.com/library/view/modern-c-programming/9781941222423/f_0055.html)
+- [Learn Go With Test](https://quii.gitbook.io/learn-go-with-tests/)
