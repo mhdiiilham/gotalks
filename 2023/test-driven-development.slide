@@ -22,7 +22,9 @@ func Sum(a, b int) int {
 - Test Code
 ```
 func TestSum(t *testing.T) {
-    assert.Equal(t, 5, Sum(2, 3), "expected sum function to return 5")
+    expected := 5
+    actual := Sum(2, 3)
+    assert.Equal(t, expected, actual, "expected sum function to return 5")
 }
 ```
 
@@ -75,11 +77,19 @@ Robert C. Martin (“Uncle Bob”) provides a concise set of laws for practicing
 
 You must first write a unit test and that unit test must fail!
 
+<p align="center">
+  <img src="https://www.liveabout.com/thmb/vyuYctplmuhXJ4wUN7LnweVrrW0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/confusedladymathmeme-5ab6ad1d8e1b6e0037eb6fe8.PNG" height="350" width="550"/></br>
+</p>
+
 _WHAT THE HECK ARE WE SUPPOSED TO TEST?_
 
 ## 2. You are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 
 __As soon as the unit test is fails__ you __MUST__ stop writing it!
+
+<p align="center">
+  <img src="https://i.imgflip.com/4/8h0c8.jpg" height="350" width="550"/></br>
+</p>
 
 ## 3. Write no more production code than necessary to pass the one failing unit test.
 
@@ -90,6 +100,29 @@ and then you have __write production code__, but you can't write much of that be
 then you have to switch back to the test and add a little bit more and it won't work again, and go back to write production code, and then unit test code, then production code again, and so on ...
 
 It is __<i>dumb</i>__, YES, lot of SOFTWARE ENGINEERS don't agree too.
+
+## Demo Time
+
+__Goal__: Building A [RESTful](https://restfulapi.net) API using Go (while implementing TDD, ofc, hehe)
+
+__Requirements__:
+- Go (version 1.18+)
+- Code Editor (VSCode, Goland, or anything you prefer)
+
+__Application Requirements__:
+- `POST /books` : insert a book
+- `GET /books` : get list of books of all books
+- `GET /books/:isbn` : get a book details by it isbn
+- `DELETE /books/:isbn` : delete a book by it isbn
+- `PATCH /books/:isbn` : update book detail's by isbn
+
+_P.S: we don't use database implementation here to shorten the talks length 😉._
+
+## QnA
+
+<p align="center">
+  <img src="https://pm1.aminoapps.com/6941/dc1f70d3fde3e7b819a34751d9672f0bc8098bc0r1-540-453v2_hq.jpg" height="350" width="550"/></br>
+</p>
 
 ## Sources:
 - [Uncle Bob: Three Laws of TDD Demo](https://www.youtube.com/watch?v=qkblc5WRn-U)
